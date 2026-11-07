@@ -110,13 +110,12 @@ function header() {
   return `
   <header class="bg-navy text-white pt-safe sticky top-0 z-20 shadow-lg">
     <div class="mx-auto max-w-xl px-4 pb-3">
-      <div class="flex items-center gap-3">
-        <img src="${import.meta.env.BASE_URL}favicon.svg" alt="" class="h-9 w-9" />
-        <div class="leading-tight">
-          <h1 class="text-lg font-bold">Storhamar U12</h1>
-          <p class="text-xs text-white/70">Sesongen 2026–2027 · født 2015</p>
-        </div>
-        <button id="install" class="ml-auto hidden rounded-full bg-white/15 px-3 py-1.5 text-xs font-semibold hover:bg-white/25">Installer app</button>
+      <div class="relative flex flex-col items-center text-center">
+        <h1 class="sr-only">Storhamar U12</h1>
+        <img src="${import.meta.env.BASE_URL}logo.png" alt="Storhamar Yngres" class="h-20 w-auto drop-shadow" />
+        <div class="-mt-1 text-2xl font-black tracking-widest text-sh-yellow">U12</div>
+        <p class="text-xs text-white/70">Sesongen 2026–2027 · født 2015</p>
+        <button id="install" class="absolute right-0 top-0 hidden rounded-full bg-white/15 px-3 py-1.5 text-xs font-semibold hover:bg-white/25">Installer app</button>
       </div>
       <nav class="mt-3 grid grid-cols-4 gap-2" aria-label="Velg lag">
         ${teams.map(t => `
