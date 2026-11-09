@@ -15,6 +15,7 @@ export const teams = [
       { nr: '55', name: 'Mikkel ØB' },
       { nr: null, name: 'Edwin' },
       { nr: null, name: 'Mikkel GT' },
+      { nr: null, name: 'Christian' },
     ],
   },
   {
