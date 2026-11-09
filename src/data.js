@@ -32,6 +32,7 @@ export const teams = [
       { nr: '54', name: 'William' },
       { nr: '58', name: 'Julian LC' },
       { nr: '35', name: 'Elias' },
+      { nr: null, name: 'Henrik' },
     ],
   },
   {
